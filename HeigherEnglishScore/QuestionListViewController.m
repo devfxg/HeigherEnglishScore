@@ -2,7 +2,7 @@
 //  QuestionListViewController.m
 //  HeigherEnglishScore
 //
-//  Created by Ibokan on 13-1-6.
+//  Created by Ibokan on 13-1-8.
 //  Copyright (c) 2013年 IOS44. All rights reserved.
 //
 
@@ -13,12 +13,17 @@
 @end
 
 @implementation QuestionListViewController
+@synthesize dataList=_dataList;
+@synthesize grade=_grade;
+@synthesize year=_year;
+@synthesize type=_type;
+@synthesize dictionary=_dictionary;
+
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
     if (self) {
-        // Custom initialization
     }
     return self;
 }
@@ -26,9 +31,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.title=@"试题列表";
+    
     ThemeLibaryXML *xml=[[ThemeLibaryXML alloc]init];
     self.dataList=[xml startParseWithGrade:_grade andYear:_year andType:_type];
+    self.dictionary=[[NSMutableDictionary alloc]init];
     [xml release];
 }
 
@@ -61,10 +67,10 @@
     }
     ThemeLibary *libary=[_dataList objectAtIndex:indexPath.row];
     cell.textLabel.text=libary.title;
-    UIImage *image=[UIImage imageNamed:@"bg_point.png"];
-    cell.imageView.image=image;
     cell.detailTextLabel.text=[NSString stringWithFormat:@"%@",libary.createDate];
-    NSLog(@"%@",libary.themeId);
+    cell.imageView.image=[UIImage imageNamed:@"bg_point.png"];
+    [cell setAccessoryType:UITableViewCellAccessoryDisclosureIndicator];
+    [_dictionary setValue:libary.themeId forKey:[NSString stringWithFormat:@"%d",indexPath.row]];
     return cell;
 }
 
@@ -114,8 +120,8 @@
     // Navigation logic may go here. Create and push another view controller.
     
      QuestionDetailViewController *detailViewController = [[QuestionDetailViewController alloc] init];
-      ThemeLibary *temp=[self.dataList objectAtIndex:indexPath.row];
-    NSLog(@"%@",temp.themeId);
+    NSString *tem=[_dictionary valueForKey:[NSString stringWithFormat:@"%d",indexPath.row]];
+    detailViewController.detailId=tem;
      [self.navigationController pushViewController:detailViewController animated:YES];
      [detailViewController release];
     

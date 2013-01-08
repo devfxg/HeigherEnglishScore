@@ -183,6 +183,7 @@
         [tempArray addObject:tempDetail];
         NSLog(@"%@",tempDetail.title);
         NSLog(@"%@",tempDetail.selectArray);
+        NSLog(@"%@",tempDetail.hintArray);
         [tempDetail release];
     }
     [self.themList removeAllObjects];//清空原有数据

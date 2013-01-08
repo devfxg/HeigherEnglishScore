@@ -332,7 +332,7 @@
 		0F0D6F9416984A4E0093D31D /* NewWordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F0D6F9216984A4E0093D31D /* NewWordViewController.xib */; };
 		0F0D6FA31698512A0093D31D /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0D6FA11698512A0093D31D /* MainViewController.m */; };
 		0F0D6FA41698512A0093D31D /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F0D6FA21698512A0093D31D /* MainViewController.xib */; };
-		0F86375616997DA500DE6A23 /* QuestionListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F86375416997DA500DE6A23 /* QuestionListViewController.m */; };
+		0F3B9D8C169BD3E9007C7192 /* QuestionListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3B9D8A169BD3E9007C7192 /* QuestionListViewController.m */; };
 		0FB797A4169A7F2C004D6F14 /* ThemeLibary.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FB797A3169A7F2C004D6F14 /* ThemeLibary.m */; };
 		0FB797A7169A800F004D6F14 /* ThemeLibaryXML.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FB797A6169A800F004D6F14 /* ThemeLibaryXML.m */; };
 		0FB797AF169ABB8C004D6F14 /* QuestionDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FB797AD169ABB8C004D6F14 /* QuestionDetailViewController.m */; };
@@ -677,8 +677,8 @@
 		0F0D6FA0169851290093D31D /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		0F0D6FA11698512A0093D31D /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		0F0D6FA21698512A0093D31D /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
-		0F86375316997DA500DE6A23 /* QuestionListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionListViewController.h; sourceTree = "<group>"; };
-		0F86375416997DA500DE6A23 /* QuestionListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionListViewController.m; sourceTree = "<group>"; };
+		0F3B9D89169BD3E9007C7192 /* QuestionListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionListViewController.h; sourceTree = "<group>"; };
+		0F3B9D8A169BD3E9007C7192 /* QuestionListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionListViewController.m; sourceTree = "<group>"; };
 		0FB797A2169A7F2C004D6F14 /* ThemeLibary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThemeLibary.h; sourceTree = "<group>"; };
 		0FB797A3169A7F2C004D6F14 /* ThemeLibary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThemeLibary.m; sourceTree = "<group>"; };
 		0FB797A5169A800F004D6F14 /* ThemeLibaryXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThemeLibaryXML.h; sourceTree = "<group>"; };
@@ -1266,8 +1266,8 @@
 				0F0D6F7E169825600093D31D /* QuestionBankViewController.xib */,
 				0F0D6F7C169825600093D31D /* QuestionBankViewController.h */,
 				0F0D6F7D169825600093D31D /* QuestionBankViewController.m */,
-				0F86375316997DA500DE6A23 /* QuestionListViewController.h */,
-				0F86375416997DA500DE6A23 /* QuestionListViewController.m */,
+				0F3B9D89169BD3E9007C7192 /* QuestionListViewController.h */,
+				0F3B9D8A169BD3E9007C7192 /* QuestionListViewController.m */,
 				0FB797AC169ABB8C004D6F14 /* QuestionDetailViewController.h */,
 				0FB797AD169ABB8C004D6F14 /* QuestionDetailViewController.m */,
 				0FB797AE169ABB8C004D6F14 /* QuestionDetailViewController.xib */,
@@ -1740,12 +1740,12 @@
 				0F0D6F8E16984A1A0093D31D /* ListeningViewController.m in Sources */,
 				0F0D6F9316984A4E0093D31D /* NewWordViewController.m in Sources */,
 				0F0D6FA31698512A0093D31D /* MainViewController.m in Sources */,
-				0F86375616997DA500DE6A23 /* QuestionListViewController.m in Sources */,
 				0FB797A4169A7F2C004D6F14 /* ThemeLibary.m in Sources */,
 				0FB797A7169A800F004D6F14 /* ThemeLibaryXML.m in Sources */,
 				0FB797AF169ABB8C004D6F14 /* QuestionDetailViewController.m in Sources */,
 				0FB797B3169AC2AA004D6F14 /* ThemeDetail.m in Sources */,
 				0FB797B6169ADE32004D6F14 /* ThemeDetalXML.m in Sources */,
+				0F3B9D8C169BD3E9007C7192 /* QuestionListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

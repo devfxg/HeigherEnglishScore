@@ -28,8 +28,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-//    ThemeDetalXML *xml=[[ThemeDetalXML alloc]init];
-//    [xml startParseWithId:_detailId];
+    ThemeDetalXML *xml=[[ThemeDetalXML alloc]init];
+    [xml startParseWithId:_detailId];
 }
 
 - (void)didReceiveMemoryWarning

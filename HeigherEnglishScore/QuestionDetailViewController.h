@@ -8,11 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "ThemeDetalXML.h"
+#import "ThemeLibary.h"
 @interface QuestionDetailViewController : UIViewController
 {
     NSString *_detailId;
 }
 
-
-@property(assign,nonatomic)NSString *detailId;
+@property(retain,nonatomic)NSString *detailId;
 @end
